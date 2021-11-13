@@ -2,20 +2,19 @@ create schema TravelOnTheGo;
 
 use TravelOnTheGo;
 
-create table PASSENGER (passenger_id int primary key, passenger_name varchar(50), category varchar(50), gender char, boarding_city
+create table passenger (passenger_name varchar(50), category varchar(50), gender char, boarding_city
 varchar(50), destination_city varchar(50), distance int, bus_type varchar(50));
-alter table PASSENGER rename to passenger;
 create table price (bus_type varchar(50), distance int, price int);
 
-insert into passenger values (1, "Sejal", "AC", 'F', "Bengaluru", "Chennai", 350, "Sleeper");
-insert into passenger values (2, "Amol", "Non-AC", 'M', "Mumbai", "Hyderabad", 700, "Sitting");
-insert into passenger values (3, "Pallavi", "AC", 'F', "Panji", "Bengaluru", 600, "Sleeper");
-insert into passenger values (4, "Khusboo", "AC", 'F', "Chennai", "Mumbai", 1500, "Sleeper");
-insert into passenger values (5, "Udit", "Non-AC", 'M', "Trivandrum", "Panji", 1000, "Sleeper");
-insert into passenger values (6, "Ankur", "AC", 'M', "Nagpur", "Hyderabad", 500, "Sitting");
-insert into passenger values (7, "Hemant", "Non-AC", 'M', "Panji", "Mumbai", 700, "Sleeper");
-insert into passenger values (8, "Manish", "Non-AC", 'M', "Hyderabad", "Bengaluru", 500, "Sitting");
-insert into passenger values (9, "Piyush", "AC", 'M', "Pune", "Nagpur", 700, "Sitting");
+insert into passenger values ("Sejal", "AC", 'F', "Bengaluru", "Chennai", 350, "Sleeper");
+insert into passenger values ("Amol", "Non-AC", 'M', "Mumbai", "Hyderabad", 700, "Sitting");
+insert into passenger values ("Pallavi", "AC", 'F', "Panji", "Bengaluru", 600, "Sleeper");
+insert into passenger values ("Khusboo", "AC", 'F', "Chennai", "Mumbai", 1500, "Sleeper");
+insert into passenger values ("Udit", "Non-AC", 'M', "Trivandrum", "Panji", 1000, "Sleeper");
+insert into passenger values ("Ankur", "AC", 'M', "Nagpur", "Hyderabad", 500, "Sitting");
+insert into passenger values ("Hemant", "Non-AC", 'M', "Panji", "Mumbai", 700, "Sleeper");
+insert into passenger values ("Manish", "Non-AC", 'M', "Hyderabad", "Bengaluru", 500, "Sitting");
+insert into passenger values ("Piyush", "AC", 'M', "Pune", "Nagpur", 700, "Sitting");
 
 insert into price values ("Sleeper", 350, 770);
 insert into price values ("Sleeper", 500, 1100);
